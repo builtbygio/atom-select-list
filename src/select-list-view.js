@@ -1,4 +1,4 @@
-const {Disposable, CompositeDisposable, TextEditor} = require('atom')
+const {Disposable, CompositeDisposable, TextEditor} = require('chevron')
 const etch = require('etch')
 const $ = etch.dom
 const fuzzaldrin = require('fuzzaldrin')
@@ -84,7 +84,7 @@ module.exports = class SelectListView {
   }
 
   registerAtomCommands () {
-    return global.atom.commands.add(this.element, {
+    return global.chevron.commands.add(this.element, {
       'core:move-up': (event) => {
         this.selectPrevious()
         event.stopPropagation()

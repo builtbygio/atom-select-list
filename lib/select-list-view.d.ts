@@ -1,4 +1,4 @@
-import { CompositeDisposable } from 'atom';
+import { CompositeDisposable } from 'chevron';
 export declare type EtchElement = HTMLElement;
 declare type EtchScheduler = any;
 import { SelectListProperties } from './select-list-properties';
