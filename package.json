@@ -1,6 +1,6 @@
 {
   "name": "atom-select-list",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "description": "A general-purpose select list for use in Atom packages",
   "main": "lib/select-list-view.js",
   "files": [
@@ -11,7 +11,7 @@
     "typescript": "tsc -p ./tsconfig.json",
     "build": "npm run typescript",
     "test": "atom --test test",
-    "prepare": "npm run build"
+    "prepare": "node -e \"process.exit(0)\""
   },
   "author": "",
   "license": "MIT",
@@ -29,6 +29,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/atom/atom-select-list.git"
+    "url": "https://github.com/builtbygio/atom-select-list.git"
+  },
+  "engines": {
+    "chevron": "*"
   }
 }
